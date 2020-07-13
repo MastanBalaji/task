@@ -3,16 +3,27 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { GooglemapComponent } from './components/googlemap/googlemap.component';
+import {CommonserviceService} from './service/commonservice.service'
+import { CommonModule } from '@angular/common';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import {AgmCoreModule} from '@agm/core'
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GooglemapComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule,
+    HttpClientModule,
+    AgmCoreModule.forRoot({
+      apiKey:'AIzaSyDvkx8UMPLOI1th3JOeWkvg9jUULUlQOLI'
+    })
+    
   ],
-  providers: [],
+  providers: [CommonserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,33 @@
+<h2 class="text-center mt-md-2 bold">Employee Details</h2>
+<div class='div-sty'></div>
+<div class="row row-cols-1 row-cols-md-3 w-100 p-5">
+    <div *ngFor="let profile of Profiles" class="col mb-4">
+      <div class="card">
+        <img [src]="profile.image" class="card-img-top img-fluid img-thumbnail img-sty" alt="Profile pic">
+        <div class="card-body" class="text-center m-2" >
+            <h4 >Details</h4>
+            <div class='div-sty'></div>
+            <div class="d-flex justify-content-center align-items-center text-left ml-md-5">
+              <table class="table table-borderless ml-md-4">
+                <tr>
+                  <td>ID</td>
+                  <td> : </td>
+                  <td>{{profile.id}}</td>
+                </tr>
+                <tr>
+                    <td>NAME</td>
+                    <td> : </td>
+                    <td>{{profile.name}}</td>
+                </tr>
+                <tr>
+                    <td>Category</td>
+                    <td> : </td>
+                    <td>{{profile.category}}</td>
+                </tr>
+              </table>
+            </div>
+            <a [routerLink]="['/profile/view', profile.id]"><button class="btn btn-secondary text-center w-25"> View</button></a>
+        </div>
+      </div>
+    </div>
+  </div>

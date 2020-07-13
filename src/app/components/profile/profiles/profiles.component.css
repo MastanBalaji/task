@@ -1,0 +1,20 @@
+.img-sty{
+height: 250px;
+}
+.div-sty{
+    border: 1px solid #399048;
+    width: 19%;
+    margin: 2% auto;
+}
+button:hover{
+    border-block-color:#6b757d ;
+    background-color: whitesmoke;
+    color:#6b757d;
+    font-weight: 600;
+}
+.card {
+    box-shadow: 0.5rem 0.5rem 0.5rem;
+}
+h2{
+font-family: fantasy;
+}

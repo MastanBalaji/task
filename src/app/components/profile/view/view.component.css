@@ -1,0 +1,23 @@
+.div-sty{
+    border: 1px solid #399048;
+    width: 10%;
+    margin: 2%;
+}
+.clr{
+    color:#399048
+}
+.sty{
+    box-shadow: 0.5rem 0.5rem 1.5rem;
+    border-radius: 1rem;
+}
+.img-sty{
+    box-shadow: -0.5rem 0.5rem 1.5rem black;
+}
+.main-sty{
+    position: relative;
+}
+.back-sty{
+    position: absolute;
+    top:-2%;
+    left: 1%;
+}

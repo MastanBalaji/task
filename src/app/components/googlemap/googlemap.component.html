@@ -1,0 +1,7 @@
+ <div> 
+     <agm-map [latitude]='lat' [longitude]='long'  [mapTypeControl]='true' >
+            <agm-marker *ngFor='let location of locations'
+            [latitude]="location.lat" [longitude]="location.longg"
+            ></agm-marker>
+    </agm-map>
+ </div>

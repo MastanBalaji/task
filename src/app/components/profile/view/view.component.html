@@ -1,0 +1,54 @@
+<div *ngIf='profile' class="mt-5 p-md-5 d-md-flex main-sty">
+    <button class="back-sty btn"><a routerLink='/profile/profiles'><b>Back</b></a></button>
+    <div class=' col-sm-12 col-md-4 p-md-5 '>
+        <img [src]='profile.image' class="img-fluid rounded-circle img-sty">
+    </div>
+    <div class='col-sm-12 col-md-8 p-md-3 sty'>
+        <h2><b>Details</b></h2>
+        <div class='div-sty'></div>
+        <div>
+            <table class="table table-borderless">
+                <tr>
+                    <td>ID</td>
+                    <td>:</td>
+                    <td>{{profile?.id}}</td>
+                </tr>
+                <tr>
+                    <td>NAME</td>
+                    <td>:</td>
+                    <td>{{profile?.name}}</td>
+                </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>:</td>
+                    <td>{{profile?.category}}</td>
+                </tr>
+                <tr>
+                    <td>CategoryId</td>
+                    <td>:</td>
+                    <td>{{profile?.categoryid}}</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>:</td>
+                    <td>{{profile?.address}}</td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td>:</td>
+                    <td>{{profile?.description}}</td>
+                </tr>
+                <tr>
+                    <td>Contact</td>
+                    <td>:</td>
+                    <td>{{profile?.contact}}</td>
+                </tr>
+                <tr>
+                    <td>Empcode</td>
+                    <td>:</td>
+                    <td>{{profile?.empcode}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
